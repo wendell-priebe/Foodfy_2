@@ -1,0 +1,17 @@
+/* =============== ABOUT ========== */
+.abouts{
+    text-align: justify;
+    padding: 1.8rem;
+}
+.abouts h1{
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+.abouts p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.abouts p:first-child{
+    margin-bottom: 2rem;
+}

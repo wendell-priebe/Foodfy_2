@@ -1,0 +1,61 @@
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.card{
+    background-color: var(--color-yellow);
+    border-radius: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.card img{
+    max-width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+.card h2{
+    font-size: 1.6rem;
+}
+.card p{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+/* ===========MODAL============ */
+.modal_overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal_overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    position: relative;
+    top :5%;
+}
+.icon_modal{
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+.material-icons{
+    position: absolute;
+    right: .1rem;
+    top: .1rem;
+    background-color:var(--color-purple);
+    border-radius: 2rem;
+    padding: .2rem;
+}
+.modal_container{
+    margin: auto;
+    width: 100%;
+}

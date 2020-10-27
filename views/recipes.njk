@@ -1,0 +1,71 @@
+{% extends 'layout.njk' %}
+
+{% block title %}
+<title>Foodfy - Receitas</title>
+<link rel="stylesheet" href="recipes.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+{% endblock%}
+
+{% block menu %}
+    <li><a class="buttonsMenu" href="about">Sobre</a></li>
+    <li><a class="buttonsMenu" href="recipes"><strong>Receitas</strong></a></li>
+{% endblock %}
+
+{% block container %}
+        <main>
+            <section class="container_cards">
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/burger.png" alt="">
+                        <h2>Triplo bacon</h2>
+                        <p>por Jorge amado</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/espaguete.png" alt="">
+                        <h2>Triplo bacon</h2>
+                        <p>por Jorge amado</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/lasanha.png" alt="">
+                        <h2>Triplo bacon</h2>
+                        <p>por Jorge amado</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/burger.png" alt="">
+                        <h2>Triplo bacon</h2>
+                        <p>por Jorge amado</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/espaguete.png" alt="">
+                        <h2>Triplo bacon</h2>
+                        <p>por Jorge amado</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/lasanha.png" alt="">
+                        <h2>Triplo bacon</h2>
+                        <p>por Jorge amado</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/lasanha.png" alt="">
+                        <h2>Triplo bacon</h2>
+                        <p>por Jorge amado</p>
+                    </div>
+                </div>
+            </section>
+            <section class="modal_overlay ">
+                <div class="modal">
+                    <a class="icon_modal">
+                        <span class="material-icons" id="clear">clear</span>
+                    </a>
+                    <div class="modal_container">
+                       
+                    </div>
+                </div>
+            </section>
+        </main>
+        {% endblock%}
+        
+    {% block scriptRecipes %}
+        <script src="script_recipes.js"></script>
+    {% endblock %}

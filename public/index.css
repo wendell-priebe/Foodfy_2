@@ -1,0 +1,55 @@
+/* =========== INDEX -============== */
+main{
+    width: 100%;
+    margin: 30px auto;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-yellow);
+    border-radius: 3rem;
+}
+.conteiner_about{
+    align-self: center;
+    line-height: 1.5;
+    text-align: center;
+    padding: 5.2rem;
+}
+.conteiner_about h1{
+    font-size: 3.5rem;
+}
+.conteiner_about p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.img_chef{
+    padding-top: 5rem;
+    text-align: center;
+}
+.container_cards h1{
+    font-size: 2.4rem;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+.cards{
+    max-width: 96rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.card{
+    flex: 1 1 20rem;
+    margin: 1rem;
+    text-align: center;
+}
+.card img{
+    border-radius: 1.5rem;
+    max-width: 100%;
+    display: block;
+}
+.card h2{
+    font-size: 1.8rem;
+}
+.card p{
+    font-size: 1.4rem;
+}

@@ -1,0 +1,36 @@
+@media(max-width:425px){
+    body{
+        max-width: 42.5rem;
+    }
+    .header{
+        margin: 1rem 1rem;
+    }
+    .navMenu{
+        margin-left: 2.2rem;
+    }
+    .banner{
+        display: flex;
+        border-radius: 0;
+    }
+    .conteiner_about{
+        width: 100%;
+    }
+    .img_chef{
+        display: none;
+    }
+    .cards{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card{
+        margin: 0 auto;
+        border-radius: 0;
+        margin-top: 1rem;
+    }
+    .card img{
+        padding: 1rem;
+        max-width: 100%;
+        border-radius: 1.5rem;
+    }
+}

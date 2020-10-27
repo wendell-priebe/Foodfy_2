@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+    --color-red:red;
+    --color-yellow:yellow;
+    --color-green:green;
+    --color-purple:purple;
+    --color-back:#2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 94rem;
+    width: 100%;
+    margin: 0 auto;
+    transition: 200ms;
+}
+/* ===================HEADER================== */
+.header{
+    margin: 30px 30px;
+    display: flex;
+}
+.img-logo{
+    height: 26.9px;
+    width: 90.6px;
+}
+#logoFoodfy.active{
+    background-color: var(--color-yellow);
+    border-radius: .5rem;
+}
+.navMenu{
+   margin-left: 12.2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+li{
+    display: inline-block;
+}
+li strong{
+    font-size: 1.6rem;
+}
+.buttonsMenu{
+    text-decoration: none;
+    color: #111111; 
+    margin-right: 30px; 
+    font-size: 1.6rem;
+}
+.buttonsMenu:hover{
+    color: var(--color-yellow) ;
+    text-shadow: 1px 1px 2px black;
+    transition: 200ms;
+}
+.buttonsMenu.active{
+    color: var(--color-yellow);
+    text-shadow: 1px 1px 2px var(--color-purple);
+    transition: 200ms;
+}
+.buttonsMenu.active:hover{
+    color: var(--color-purple);
+    transition: 200ms;
+}
+/* ================BUTTON DARK MODE============== */
+.darkBotton{
+    font-size: 1.6rem;
+    border: 1px groove black;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-purple);
+    color: var(--color-yellow);
+    display: flex;
+    align-self:flex-end;
+}
+.darkBotton:hover{
+    background-color: var(--color-back);
+    transition: 200ms;
+}
+.darkBotton.active{
+    background-color: var(--color-yellow);
+    color: black;
+}
+.darkBotton.active:hover{
+    background-color: white;
+    transition: 200ms;
+}
+.activeColor{
+    background-color: var(--color-back);
+    transition: 200ms;
+}
+/* ===================TEXT================ */
+h1.active{
+    color: var(--color-yellow);
+}
+h2.active{
+    color: var(--color-yellow);
+}
+p.active{
+    color: var(--color-yellow);
+}
+/* ==================FOOTER ============== */
+footer{
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+footer.active{
+    color: var(--color-yellow);
+}
+footer > a.active{
+    color:var(--color-yellow);
+}
