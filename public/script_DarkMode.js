@@ -10,22 +10,35 @@ permanencCookie()
 
 // quando click no botao darkmode faz um dark na pagina
 function darkMode(){
+    // liga o modedark
     onOffDark()
+    // verifica se esta true/false e troca estado cookie
     let resCookie = checkCookie("cookie_valid")
-    console.log(resCookie, 'rescookie botao')
     if (resCookie) {
         creatCookie("cookie_valid", false, 7)
-    } else {
+    }else{
         creatCookie("cookie_valid", true, 7)
     }
 }
 
-// verifica estado (true/false) cookie
-function checkCookie (cname){
-    let test = document.cookie.split("=")
-    return test[1]
+// verifica estado true/false cookie
+function checkCookie (name){
+    // cria o cookie caso nao exista
+    let testname = document.cookie.includes(name)
+
+    if (!testname) {
+        creatCookie("cookie_valid", false, 7)
+        return testname
+    }
+    // retorna o valor de cookie
+    let [,test] = document.cookie.split("=")
+    if (test==="true") {
+        return true
+    }else{
+        return false
+    }
 }
-// quando o cookie estiver true liga o mod dark
+// quando o cookie estiver true liga o modo dark
 function permanencCookie(){
     let resCookie = checkCookie("cookie_valid")
     if (resCookie) {
