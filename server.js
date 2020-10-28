@@ -5,7 +5,7 @@ const server = express()
 
 nunjucks.configure('views',{
     express:server,
-    // noCache:true,
+    noCache:true,
     autoescape:false
 })
 
