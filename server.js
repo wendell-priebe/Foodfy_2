@@ -22,6 +22,9 @@ server
     .get('/recipes',function(req,res){
         return res.render('recipes')
     })
+    .get('/add-recipes',function(req,res){
+        return res.render('creat_recipe')
+    })
 // porta do server
     .listen(5500,function(){
         // run: yarn start

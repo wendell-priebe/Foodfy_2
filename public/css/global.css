@@ -49,7 +49,7 @@ li strong{
 .buttonsMenu{
     text-decoration: none;
     color: #111111; 
-    margin-right: 30px; 
+    margin-right: 3rem; 
     font-size: 1.6rem;
 }
 .buttonsMenu:hover{
@@ -94,7 +94,7 @@ li strong{
     background-color: var(--color-back);
     transition: 200ms;
 }
-/* ===================TEXT================ */
+/* ===============TEXT COLOR============== */
 h1.active{
     color: var(--color-yellow);
 }

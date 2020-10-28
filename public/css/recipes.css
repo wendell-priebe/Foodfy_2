@@ -59,3 +59,24 @@
     margin: auto;
     width: 100%;
 }
+.recipe_overlay{
+
+}
+.recipe_modal{
+    text-align: center;
+}
+.recipe_modal img{
+    max-width: 100%;
+}
+.recipe_modal h2{
+    font-size: 1.6rem;
+}
+.recipe_modal strong{
+    font-size: 1.2rem;
+}
+.recipe_modal li{
+    font-size: 1.2rem;
+}
+.recipe_modal p{
+    font-size: 1.2rem;
+}
