@@ -5,7 +5,7 @@ const server = express()
 
 nunjucks.configure('views',{
     express:server,
-    noCache:true,
+    // noCache:true,
     autoescape:false
 })
 
@@ -24,5 +24,6 @@ server
     })
 // porta do server
     .listen(5500,function(){
+        // run: yarn start
         console.log('server is runnig door:5500')
     })
